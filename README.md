@@ -1,4 +1,44 @@
-# Welcome to your Lovable project
+# EduLearn - Learning Management System
+
+A complete LMS platform with separate portals for Students, Instructors, and Admins.
+
+## Features
+
+### Student Portal
+- Browse and enroll in courses
+- Mock payment system (test success/failure scenarios)
+- Watch course videos broken into modules with timestamps
+- Complete quizzes for each module
+- Track progress with checkboxes
+- Generate certificates upon 100% completion
+
+### Instructor Portal
+- Request to add new courses with YouTube videos
+- Set quizzes for course modules after admin approval
+- Manage approved courses
+
+### Admin Portal
+- Approve/reject student enrollment requests
+- Approve/reject instructor course addition requests
+- View all courses with enrolled students/instructors
+- Remove students/instructors from courses
+
+## Backend Integration
+
+This frontend connects to a MySQL backend (XAMPP). See `BACKEND_API_REFERENCE.md` for the required API endpoints.
+
+**Important**: Update the API URL in `src/lib/api.ts` to match your backend server.
+
+## Database Schema
+
+Uses the following MySQL tables:
+- `Admin`, `Instructor`, `Student` - User management
+- `Course` - Course data with pricing (₹500-2000 based on duration)
+- `Enrolls_In` - Student-Course enrollment
+- `Quiz` - Module quizzes
+- `Certificate` - Completion certificates
+
+## Welcome to your Lovable project
 
 ## Project info
 
