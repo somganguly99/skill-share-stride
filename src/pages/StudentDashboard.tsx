@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '@/contexts/AuthContext';
-import { api } from '@/lib/api';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { useToast } from '@/hooks/use-toast';
+import { useAuth } from '../contexts/AuthContext';
+import { api } from '../lib/api';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../components/ui/card';
+import { useToast } from '../hooks/use-toast';
 import { LogOut, BookOpen, Award } from 'lucide-react';
 
 const StudentDashboard = () => {
