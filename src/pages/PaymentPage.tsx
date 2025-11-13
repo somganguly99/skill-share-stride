@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { useAuth } from '@/contexts/AuthContext';
-import { api } from '@/lib/api';
-import { useToast } from '@/hooks/use-toast';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { useAuth } from '../contexts/AuthContext';
+import { api } from '../lib/api';
+import { useToast } from '../hooks/use-toast';
 import { CheckCircle, XCircle, CreditCard } from 'lucide-react';
 
 const PaymentPage = () => {
