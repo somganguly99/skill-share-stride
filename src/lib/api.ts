@@ -1,6 +1,6 @@
 // API base URL - update this to your XAMPP backend URL
-// After copying backend folder to htdocs/edulearn-api, use:
-const API_BASE_URL = 'http://localhost/edulearn-api/api';
+// After copying backend folder to htdocs/edulearn, use:
+const API_BASE_URL = 'http://localhost/edulearn/api';
 
 interface LoginResponse {
   success: boolean;
